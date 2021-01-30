@@ -23,5 +23,3 @@ puzzle input =
       pairs = filter (\(a, b) -> a /= b) [(a, b) | a <- ns, b <- ns]
       (f, s) = head $ filter (\(a, b) -> a + b == 2020) pairs
    in show (f * s)
-
-puzzleMain = interact puzzle
