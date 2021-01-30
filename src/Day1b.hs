@@ -1,17 +1,7 @@
 module Day1b where
 
+import Split
 import System.IO
-
--- TODO rather use this: https://hackage.haskell.org/package/split
--- or splitAt from prelude!! Nope, splitAt would not work at all!!!
-split :: Char -> String -> String -> [String]
-split del temp "" = [temp]
-split del temp (s : ss)
-  | s == del = temp : (split del "" ss)
-  | otherwise = split del (temp ++ [s]) ss
-
-splitOn :: String -> String -> [String]
-splitOn del strings = split (head del) "" strings
 
 parseInput :: String -> [Int]
 parseInput xs = map read $ filter notEmpty $ splitOn "\n" xs
