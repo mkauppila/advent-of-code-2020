@@ -1,4 +1,4 @@
-module Day1 where
+module Day1a where
 
 import System.IO
 

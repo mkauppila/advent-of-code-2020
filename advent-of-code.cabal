@@ -2,8 +2,8 @@ name:                advent-of-code
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/githubuser/advent-of-code#readme
-license:             BSD3
+homepage:            https://github.com/mkauppila/<fix-this>
+license:             MIT
 license-file:        LICENSE.md
 author:              Markus Kauppila
 maintainer:          markus.kauppila@gmail.com
@@ -17,19 +17,19 @@ extra-source-files:  README.md
 library
   default-language: Haskell2010
   hs-source-dirs: src
-  exposed-modules: Day1, Util
+  exposed-modules: Day1a, Day1b, Util
   build-depends:       base >= 4.7 && < 5
 
 executable day1a
-  hs-source-dirs:      app
+  hs-source-dirs:      puzzles/day1a
   main-is:             Main.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5,
                        time,
                        advent-of-code
 
- executable day1b
-  hs-source-dirs:      app
+executable day1b
+  hs-source-dirs:      puzzles/day1b
   main-is:             Main.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5,

@@ -1,6 +1,6 @@
 module Main where
 
-import Day1 as Lib
+import Day1a as Lib
 import Util
 
 main :: IO ()
